@@ -28,9 +28,18 @@ $uname="";$err_uname="";
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+  	<style>
+  		body{
+	  margin: 0;
+	  padding: 0;
+	  background: url('..\storage\bg\g6.gif');
+	  background-repeat: no-repeat;
+	  background-size: cover;
+}
+  	</style>
     <meta charset="utf-8">
     <title></title>
-    <link rel="stylesheet" href="log_in_style.css">
+    <link rel="stylesheet" href="Styles\log_in_style.css">
     <link href="https://fonts.googleapis.com/css2?family=Bellota:ital,wght@1,700&display=swap" rel="stylesheet">
   </head>
   <body>

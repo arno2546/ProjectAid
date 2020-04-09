@@ -36,7 +36,7 @@ h3{
       width: 550px;
       height:500px;
       color: black;
-      background-image:url("l.jpg"); ;
+      background-image:url("..\storage\bg\l.jpg"); ;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;

@@ -1,6 +1,6 @@
 <html>
   <head>
-    <link rel="stylesheet" href="gen_sign_sheet.css">
+    <link rel="stylesheet" href="styles\gen_sign_sheet.css">
     <title>Sign Up</title>
   </head>
   <body align="center">
