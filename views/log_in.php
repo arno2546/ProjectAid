@@ -28,19 +28,30 @@ $uname="";$err_uname="";
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-  	<style>
-  		body{
-	  margin: 0;
-	  padding: 0;
-	  background: url('..\storage\bg\g6.gif');
-	  background-repeat: no-repeat;
-	  background-size: cover;
-}
-  	</style>
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="Styles\log_in_style.css">
     <link href="https://fonts.googleapis.com/css2?family=Bellota:ital,wght@1,700&display=swap" rel="stylesheet">
+    <style>
+  		body{
+			  margin: 0;
+			  padding: 0;
+			  background: url('../storage/bg/g6.gif');
+			  background-repeat: no-repeat;
+			  background-size: cover;
+
+			}
+		.login-form{
+			  width: 300px;
+			  padding: 20px;
+			  text-align: center;
+			  background: url('../storage/bg/bg3.jpg');
+			  position: absolute;
+			  top: 50%;
+			  left: 50%;
+			  transform: translate(-50%,-50%);
+			  overflow: hidden;
+  	</style>
   </head>
   <body>
     <div class="login-form">
