@@ -20,13 +20,11 @@
      <style>
 
        .info
-       {
+       { border: 5px;
+         border-color: black;
          position: absolute;
          top: 10%;
          left:8%;
-
-
-
          width: 80%;
          margin: 0 auto;
          padding: 20px;
@@ -51,6 +49,9 @@
        }
        .unbann
        {
+         position: absolute;
+         top:80%;
+         left:40%;
          text-decoration: none;
          text-align: center;
          color: #0B5345;
@@ -106,16 +107,16 @@
        <div class="info">
          <p class="title">User: <?php echo '<u>'.$uname.'</u>'; ?></p><hr><br>
          <span><b>Email :</b> <?php echo $email; ?></span><br><br>
-         <span><b>Name: </b> <?php echo $bname; ?></span><br><br>
+         <span><b>Company Name: </b> <?php echo $bname; ?></span><br><br>
          <span><b>Address: </b> <?php echo $country; ?></span><br><br>
-         <span><b>Occupation: </b> <?php echo $type; ?></span><br><br>
+         <span><b>Company Type </b> <?php echo $type; ?></span><br><br>
          <span><b>Contact:</b> <?php echo $phone; ?></span><br><br>
 
 
        </div>
 
        <div class="unbann">
-         <a href="#">Edit</a>
+         <a href="sponsoreditprofile.php">Edit</a>
        </div>
 
    </body>

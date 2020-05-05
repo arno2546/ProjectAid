@@ -114,12 +114,6 @@ $uid=$_SESSION['uid'];
           <a href="jspsearch.php">Search Projects</a>
         </li>
         <li>
-          <a href="jsponsored.php">Sponsored</a>
-        </li>
-        <li>
-          <a href="jsplisted.php">Listed</a>
-        </li>
-        <li>
           <a href="jspprofile.php">Profile</a>
         </li>
         <li>

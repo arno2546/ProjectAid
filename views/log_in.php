@@ -50,8 +50,11 @@ include 'db.php';
 									if($utype=="admin"){
 										header("Location:admin_home_view.php");
 									}
-									else{
+									elseif($utype=="gen_user"){
 										header("Location:user_home.php");
+									}
+									else{
+										header("Location:jsponsorhome.php");
 									}
 								}
 					}
@@ -107,7 +110,7 @@ include 'db.php';
 				input:focus
 				{
 					border: 3px solid #2471A3;
-					
+
 				}
 				.createAccount
 				{

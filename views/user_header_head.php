@@ -33,13 +33,13 @@
     background:  #aed6f1;
     border-radius: 20px;
     height: 25px;
-    
+
   }
   .logo{
     margin: 0;
     margin-top: 10px;
     padding-right:20%;
-    
+
   }
   .logo1
   {

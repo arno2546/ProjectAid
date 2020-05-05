@@ -61,8 +61,8 @@
              <span><b>Description:</b> '.$row["des"].'<br></span>
              <span><b>GitHub Link:</b> '.$row["glink"].'<br></span>
              <span><b>Extra Links:</b> '.$row["dlink"].'<br></span>
-             <span style=color:orange;><b>Aid Type: '.$row["aid_type"].'</b><br></span>
-             <span style=color:black><b>Contact:</b> '.$row["con"].'<br>
+             <span><b>Aid Type: '.$row["aid_type"].'</b><br></span>
+             <span><b>Contact:</b> '.$row["con"].'<br>
              </span>
 
 

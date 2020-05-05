@@ -4,7 +4,7 @@ if(!isset($_SESSION['uid']))
   echo "You are not logged in";
   exit();
 }
-$name=$_SESSION['uname'];
+$uname=$_SESSION['uname'];
 $uid=$_SESSION['uid'];
 
     function log_out()
@@ -26,7 +26,7 @@ $uid=$_SESSION['uid'];
       <li><a href="user_search.php">Search</a></li>
       <li><a href="user_create_project.php">Create Project</a></li>
       <li><a href="user_profile_view.php">Profile</a></li>
-      <li><a href="user_home.php?log_out=true">Log out (<?php echo $name; ?>)</a></li>
+      <li><a href="user_home.php?log_out=true">Log out (<?php echo $uname; ?>)</a></li>
     </div>
   </ul>
 </nav>

@@ -201,7 +201,7 @@
         background: #2c3e50;
         border-radius: 15px;
         color: white;
-        
+
 
       }
       table
@@ -224,7 +224,7 @@
       <div class="nav1"><ul>
         <li><a class="title1" style="font-size:34px; padding-right:900px;text-align:left;" href="index.html"><span style="color:#d5d8dc;">Project Aid</span></a></li>
         <li><a href="log_in.php"><span style="color: #5dade2;">Log In</span></a></li>
-        <li><a href="#"><span style="color: #5dade2;">Become Sponsor</span></a></li>
+        <li><a href="jsignsp.php"><span style="color: #5dade2;">Become Sponsor</span></a></li>
 
     <div>  </ul>
     </nav>
@@ -271,7 +271,7 @@
         <tr>
           <td></td>
           <td>
-            <select name="occupation" class="occupation">
+            <select  name="occupation" class="occupation">
               <option value="Others">Others</option>
       			  <option value="Academic">Academic</option>
       			  <option value="Business">Business</option>

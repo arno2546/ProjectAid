@@ -13,32 +13,35 @@
 
 		      .search_bar
 		      {
+						border-top: 3px solid black;
+						font-family: fantasy;
 		      	width: 100%;
 		      	height: 20px;
 		      	margin-left: 30%
 		      }
 		      .search_bar input
 		      {
+						border-radius: 10px;
 		      	width: 500px;
 		      	height: 20px;
 		      	font-family: consolas;
 		      	transition: .5s;
-		      	box-shadow: 0 0 30px #0038a7;
 		      	text-align: center;
 		      }
 		      .search_bar input:focus
 		      {
+						border-radius: 20px;
 		      	width: 600px;
 		      	height: 30px;
 		      	font-size: 28px;
 		      	margin-left: -5%;
 		      	border: 2px solid #0038a7;
-		      	box-shadow: 0 0 10px #5DADE2 , 0 0 40px #5DADE2 , 0 0 80px #5DADE2 ;
 		      }
 		      .search_result
 		      {
 		      	margin-top: 5%;
 		      	margin-left: 10%;
+
 
 		      }
 
@@ -79,7 +82,7 @@
 					}
 					http.open("GET","jsearch.php?sk="+search_str,true);
 					http.send();
-					
+
 				}
 			</script>
 		</head>
@@ -89,9 +92,9 @@
 				<div id="output"></div>
 				<div class="search_bar">
 					<br>
-					<input type="text" id="search_txt" onkeyup="search()" placeholder="search all projects....">
+					<input type="text" id="search_txt" onkeyup="search()" placeholder="Search Projects">
 				</div>
-				<div class="search_result" id="search_result"></div>
+				<div class="search_result"  id="search_result"></div>
 			</section>
 		</body>
 		</html>
