@@ -6,7 +6,7 @@ include 'db.php';
 	$pass="";
 	$err_pass="";
 	$err_invalid="";
-  $id="";
+  	$id="";
 	$has_error=false;
 	$msg="";
 	if(isset($_POST['submit']))
@@ -33,11 +33,12 @@ include 'db.php';
 		{
 			$sql="SELECT uid,uname,user_type,status FROM users WHERE email='$uname' AND password='$pass';";
 			$result=mysqli_query($conn,$sql);
-      $row = mysqli_fetch_assoc($result);
+      		$row = mysqli_fetch_assoc($result);
 				if(mysqli_num_rows($result)>0)
 					{
 						$_SESSION['uname']=$row["uname"];
-		        $_SESSION['uid']=$row["uid"];
+		        		$_SESSION['uid']=$row["uid"];
+		        		$_SESSION['u_type']=$row["user_type"];
 						$utype=$row["user_type"];
 						$status=$row["status"];
 								if($status=="banned")

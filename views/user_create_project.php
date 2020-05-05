@@ -83,19 +83,19 @@
 			font-family: consolas;
 			font-size: 14pt;
 		}
-		#crbtn
+		.crbtn
 		{
 			font-weight: bolder;
 			height: 30px;
 			width: 200px;
 			border: 0 0 2px solid blue;
+			transition: 0.5s;
 		}
 		.crbtn:hover
 		{
 			border-radius: 20px;
 			color: white;
-			background:#0038a7; 
-			transition: 0.5s;
+			background:#0038a7;	
 		}
 
 	</style>

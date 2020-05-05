@@ -30,58 +30,78 @@
 			$err_pass="*Password Required";
 			$has_error=true;
 		}
-		else
-		{
-			$pass=$_POST['pass'];
-		}
+      elseif (8>strlen($_POST['pass'])){$err_pass="*Password must contain at least 8 characters";
+        $has_error=true;
+      }
+    		else
+    		{
+    			$pass=htmlspecialchars($_POST['pass']);
+    		}
     if(empty($_POST['add']))
 		{
 			$err_add="*Address Required";
 			$has_error=true;
 		}
-		else
-		{
-			$add=$_POST['add'];
-		}
+  		else
+  		{
+  			$add=$_POST['add'];
+  		}
     if(empty($_POST['occupation']))
 		{
 
 		}
-		else
-		{
-			$occupation=$_POST['occupation'];
-		}
-	    if(empty($_POST['fname'])){
-        $err_fname="*First Name Required";
-        $has_error=true;
+  		else
+  		{
+  			$occupation=$_POST['occupation'];
+  		}
+    if(empty($_POST['fname'])){
+      $err_fname="*First Name Required";
+      $has_error=true;
     }
       else
 	    {
 	      $fname=$_POST['fname'];
 	    }
-      if(empty($_POST['phone'])){
-        $err_phone="*Phone Number Required";
-        $has_error=true;
+    if(empty($_POST['phone'])){
+      $err_phone="*Phone Number Required";
+      $has_error=true;
     }
       else
 	    {
 	      $phone=$_POST['phone'];
 	    }
-      if(empty($_POST['lname'])){
-        $err_lname="*Last Name Required";
-        $has_error=true;
+    if(empty($_POST['lname'])){
+      $err_lname="*Last Name Required";
+      $has_error=true;
     }
       else
 	    {
 	      $lname=$_POST['lname'];
 	    }
-	    if(empty($_POST['mail'])){
-	       $err_mail="*Mail Required";
-         $has_error=true;
+    if(empty($_POST['mail'])){
+       $err_mail="*Mail Required";
+       $has_error=true;
+    }
+	    elseif(!strpos($_POST['mail'], "@")||!strpos($_POST['mail'], ".com")) {
+	    	$err_mail="*Enter proper mail address";
+	    	$has_error=true;	
 	    }
-	    else {
-	       $mail=$_POST['mail'];
-	    }
+  	    else 
+        {
+          $m=$_POST['mail'];
+          $sql="SELECT * FROM users WHERE email='$m' AND password='$pass';";
+            $result=mysqli_query($conn,$sql);
+            $row = mysqli_fetch_assoc($result);
+             if(mysqli_num_rows($result)>0)
+             {
+              $err_mail="*E-mail is already registered!!";
+              $has_error=true;
+             }
+               else
+               {
+                $mail=$_POST['mail'];
+               }
+    	 }
 			if(!$has_error)
 			{
 	        	$sql= "INSERT INTO users (uname, password,email,fname,lname,status,user_type,address,phone,occupation) VALUES ('$uname','$pass','$mail','$fname','$lname','$status','$user_type','$add','$phone','$occupation');";

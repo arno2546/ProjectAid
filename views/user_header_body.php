@@ -6,7 +6,11 @@ if(!isset($_SESSION['uid']))
 }
 $uname=$_SESSION['uname'];
 $uid=$_SESSION['uid'];
-
+$u=$_SESSION['u_type'];
+if($u=="admin") {
+  echo "You are not logged in as gen user";
+  exit();
+}
     function log_out()
     {
       session_destroy();

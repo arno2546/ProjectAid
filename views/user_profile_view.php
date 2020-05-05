@@ -44,13 +44,14 @@
          display: block;
          width: 200px;
          margin-left: 40%;
+         transition: .4s;
        }
        .unbann a:hover
        {
          color:white;
          background:#0038a7;
          border-radius: 20px;
-         transition: .4s;
+         
        }
 
 

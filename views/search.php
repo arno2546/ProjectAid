@@ -7,7 +7,7 @@ $rs=mysqli_query($conn,"SELECT * FROM projects1 WHERE title LIKE '%$key%'");
 <table>
 	<?php
 while($row=mysqli_fetch_assoc($rs))
-		if($row["verf"]=="yes"){
+		{
 			echo'<div class="ideas">
                 <h3><a href="pid.php?pid='.$row["pid"].'">Title: '.$row["title"].'</a></h3>
                 <span><b>Description:</b> '.$row["des"].'<br></span>
@@ -16,9 +16,14 @@ while($row=mysqli_fetch_assoc($rs))
                 <span><b>Extra Links:</b> '.$row["dlink"].'<br><span>
                 <span style=color:orange;><b>Aid Type: '.$row["aid_type"].'</b><br><span>
                 <span style=color:black><b>Contact:</b> '.$row["con"].'<br><span>';
+                if($row["verf"]=="no")
+                {
+                  echo '<span style="color:red;"><b>Not Verified</b></span>';
                 }
-                echo '</div>';
-		
+                else {echo '<span style="color:green;"><b>Verified</b></span>';}
+
+              echo '</div>';
+		}
 
 
 	?>

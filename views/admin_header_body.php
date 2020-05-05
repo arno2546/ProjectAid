@@ -7,7 +7,12 @@ if(!isset($_SESSION['uid']))
 }
 $name=$_SESSION['uname'];
 $uid=$_SESSION['uid'];
+$u=$_SESSION['u_type'];
 
+if($u!="admin") {
+  echo "You are not logged in as admin";
+  exit();
+}
     function log_out()
     {
       session_destroy();

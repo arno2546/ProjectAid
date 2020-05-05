@@ -25,6 +25,11 @@
         padding: 8px;
         text-align: center;
         position: relative;
+        transition: .4s;
+      }
+      .ideas:hover
+      {
+        box-shadow: 5px 5px 10px #145A32,5px 5px 60px #145A32;
       }
       .ideas a
       {

@@ -60,6 +60,7 @@
          text-align: center;
          color: #0B5345;
          align-items: center;
+        
        }
        .unbann a
        {
@@ -70,13 +71,13 @@
          display: block;
          width: 200px;
          margin-left: 40%;
+          transition: .4s;
        }
        .unbann a:hover
        {
          color:white;
          background:#0B5345;
          border-radius: 20px;
-         transition: .4s;
        }
        .bann a
        {
@@ -88,13 +89,14 @@
          width: 200px;
          margin-left: 40%;
          text-align: center;
+         transition: .4s;
        }
        .bann a:hover
        {
          color:white;
          background:#e74c3c;
          border-radius: 20px;
-         transition: .4s;
+         
        }
 
      </style>
